@@ -11,7 +11,7 @@ defmodule GoogleBooks.Mixfile do
   end
 
   def application do
-    [applications: [:logger, :httpoison, :poison]]
+    [applications: [:httpoison, :poison]]
   end
 
   defp deps do
