@@ -16,6 +16,7 @@ defmodule GoogleBooks.Mixfile do
 
   defp deps do
     [
+      {:ex_doc, ">= 0.0.0", only: :dev},
       {:httpoison, "~> 0.8.0"},
       {:poison, ">= 1.0.0"},
     ]
