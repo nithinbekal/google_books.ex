@@ -3,7 +3,7 @@ defmodule GoogleBooks.Mixfile do
 
   def project do
     [app: :google_books,
-     version: "0.0.1",
+     version: "0.0.2",
      elixir: "~> 1.2",
      description: "A simple wrapper for Google Books API",
      package: package,
