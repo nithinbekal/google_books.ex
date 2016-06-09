@@ -23,7 +23,7 @@ defmodule GoogleBooks.Mixfile do
 
   def package do
     [ name: :google_books,
-      files: ["lib", "mix.exs"],
+      files: ["lib", "mix.exs", "README.md"],
       maintainers: ["Nithin Bekal"],
       licenses: ["MIT"],
       links: %{"Github" => "https://github.com/nithinbekal/google_books.ex"},
