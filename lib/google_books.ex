@@ -1,6 +1,20 @@
 defmodule GoogleBooks do
+  @moduledoc """
+  Provides a wrapper for the Google Books API.
+
+  Currently only supports finding a book by ISBN.
+  """
+
   @api_url "https://www.googleapis.com/books/v1/volumes"
 
+  @doc """
+  Searches for a book by the given ISBN.
+  Returns a map containing the book information if found.
+
+  Returns the atom `:not_found` if there is no result.
+
+      iex> GoogleBooks.find_by_isbn("978-1338099133")
+  """
   def find_by_isbn(isbn) do
     isbn
     |> remove_dashes
