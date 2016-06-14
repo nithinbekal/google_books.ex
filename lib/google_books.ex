@@ -13,7 +13,8 @@ defmodule GoogleBooks do
 
   Returns the atom `:not_found` if there is no result.
 
-      iex> GoogleBooks.find_by_isbn("978-1338099133")
+      GoogleBooks.find_by_isbn("978-1338099133")
+
   """
   def find_by_isbn(isbn) do
     isbn

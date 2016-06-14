@@ -7,6 +7,7 @@ defmodule GoogleBooks.Mixfile do
      elixir: "~> 1.2",
      description: "A simple wrapper for Google Books API",
      package: package,
+     docs: [extras: ["README.md"]],
      deps: deps]
   end
 
@@ -18,6 +19,7 @@ defmodule GoogleBooks.Mixfile do
     [
       {:earmark, ">= 0.0.0", only: :dev},
       {:ex_doc, ">= 0.0.0", only: :dev},
+
       {:httpoison, "~> 0.8.0"},
       {:poison, ">= 1.0.0"},
     ]
